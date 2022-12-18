@@ -1,0 +1,16 @@
+{
+  "name": "personal-website",
+  "version": "1.0.0",
+  "description": "Personal website and blog",
+  "main": "public/bundle.js",
+  "repository": "git@github.com:SimonFJ20/personal-website.git",
+  "author": "SimonFJ20 <simonfromjakobsen@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "esbuild --bundle src/main.ts --outfile=public/bundle.js --minify",
+    "dev": "esbuild --bundle src/main.ts --outfile=public/bundle.js --minify --sourcemap --servedir=public"
+  },
+  "dependencies": {
+    "esbuild": "^0.16.9"
+  }
+}
